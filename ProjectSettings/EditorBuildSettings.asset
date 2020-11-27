@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/MemoryTask.unity
+    guid: 717d455a33e71904da058b49fda8917d
+  - enabled: 1
+    path: Assets/Scenes/ResumeMenu.unity
+    guid: e216657535fe0344ea1ba5ffe0445519
+  - enabled: 1
+    path: Assets/Scenes/LockGame.unity
+    guid: 44a3ad1430eabf04388e75be0c25fd85
   m_configObjects: {}
