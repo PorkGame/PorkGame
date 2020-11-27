@@ -6,18 +6,32 @@ public class GameControl : MonoBehaviour
 {
     GameObject card;
     List<Color> cardColors = new List<Color> { 
-        Color.green, 
-        Color.green, 
-        Color.red, 
-        Color.red, 
-        Color.yellow, 
-        Color.yellow, 
-        Color.gray, 
-        Color.gray, 
-        Color.blue, 
-        Color.blue,
-        Color.magenta,
-        Color.magenta
+        new Color(138, 98, 89),
+        new Color(138, 98, 89), 
+        new Color(106, 138, 89),
+        new Color(106, 138, 89), 
+        new Color(75, 109, 126),
+        new Color(75, 109, 126), 
+        new Color(75, 60, 88),
+        new Color(75, 60, 88),
+        new Color(83, 50, 73),
+        new Color(83, 50, 73),
+        new Color(162, 150, 154),
+        new Color(162, 150, 154)
+    };
+    List<int> cardNumbers = new List<int> {
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6
     };
     public static System.Random rnd = new System.Random();
     public int shuffleNum = 0;
@@ -34,8 +48,10 @@ public class GameControl : MonoBehaviour
             var tmp = Instantiate(card, new Vector3(0, 0, 0), Quaternion.identity, GameObject.Find("GameCanvas").transform);
             tmp.transform.localPosition = new Vector3(xPosition, yPosition, 0);
             tmp.GetComponent<Card>().colorFace = cardColors[shuffleNum];
+            tmp.GetComponent<Card>().SetNumber(cardNumbers[shuffleNum]);
             cards.Add(tmp);
             cardColors.RemoveAt(shuffleNum);
+            cardNumbers.RemoveAt(shuffleNum);
             xPosition += 100f;
             if (i % 4 == 0)
             {
