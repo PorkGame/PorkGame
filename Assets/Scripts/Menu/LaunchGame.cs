@@ -14,6 +14,6 @@ public class LaunchGame : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene("MemoryTask", LoadSceneMode.Additive);
+        SceneManager.LoadScene("LockGame", LoadSceneMode.Additive);
     }
 }
