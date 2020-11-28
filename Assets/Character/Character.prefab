@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c45b0341047a44ab72c87b0342cc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSmoothingFactor: 1
+  cameraSmoothingFactor: 5
   lookUpMax: 60
   lookUpMin: -15
 --- !u!1 &8384980125959976696
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t_Mesh: {fileID: 5380796326477999047}
-  maxSpeed: 50
+  maxSpeed: 5
 --- !u!114 &3104483689326578236
 MonoBehaviour:
   m_ObjectHideFlags: 0
