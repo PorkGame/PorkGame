@@ -111,6 +111,7 @@ public class GameControl : MonoBehaviour
         });
         if (canFinish)
             SceneManager.UnloadSceneAsync("MemoryTask");
+        GameVariables.animals += 1;
     }
     
     private void Awake()
