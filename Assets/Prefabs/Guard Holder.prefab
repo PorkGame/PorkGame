@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2151837208489931177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242908158455298064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef67d73defb2d30458142971961895c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  waitTime: 0.3
+  turnSpeed: 90
+  timeToSpotPlayer: 0.5
+  spotlight: {fileID: 5267417854921645632}
+  viewDistance: 5
+  viewMask:
+    serializedVersion: 2
+    m_Bits: 256
+  pathHolder: {fileID: 3766242352486728292}
 --- !u!1 &3766242352486728293
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,28 +238,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2151837208489931177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242908158455298064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef67d73defb2d30458142971961895c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  waitTime: 0.3
-  turnSpeed: 90
-  timeToSpotPlayer: 0.5
-  spotlight: {fileID: 5267417854921645632}
-  viewDistance: 5
-  viewMask:
-    serializedVersion: 2
-    m_Bits: 256
-  pathHolder: {fileID: 0}
 --- !u!1001 &7070193420717187353
 PrefabInstance:
   m_ObjectHideFlags: 0
