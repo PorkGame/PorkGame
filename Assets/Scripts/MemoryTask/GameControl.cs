@@ -110,8 +110,10 @@ public class GameControl : MonoBehaviour
             }
         });
         if (canFinish)
+        {
             SceneManager.UnloadSceneAsync("MemoryTask");
-        GameVariables.animals += 1;
+            GameVariables.animals += 1;
+        }
     }
     
     private void Awake()
@@ -131,6 +133,10 @@ public class GameControl : MonoBehaviour
             {
                 SceneManager.LoadScene("ResumeMenu", LoadSceneMode.Additive);
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.UnloadSceneAsync("MemoryTask");
         }
     }
 
