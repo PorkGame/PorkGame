@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Guard : MonoBehaviour {
 
@@ -59,9 +60,10 @@ public class Guard : MonoBehaviour {
 		spotlight.color = Color.Lerp (originalSpotlightColour, Color.red, playerVisibleTimer / timeToSpotPlayer);
 
 		if (playerVisibleTimer >= timeToSpotPlayer) {
-			if (OnGuardHasSpottedPlayer != null) {
+			SceneManager.LoadScene("FinishBadScene");
+			/*if (OnGuardHasSpottedPlayer != null) {
 				OnGuardHasSpottedPlayer ();
-			}
+			}*/
 		}
 	}
 
