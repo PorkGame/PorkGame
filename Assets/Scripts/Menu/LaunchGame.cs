@@ -14,6 +14,8 @@ public class LaunchGame : MonoBehaviour
 
     public void OnClick()
     {
+        GameVariables.score = 0;
+        GameVariables.animals = 0;
         SceneManager.LoadScene("PrincipalScene");
     }
 }
