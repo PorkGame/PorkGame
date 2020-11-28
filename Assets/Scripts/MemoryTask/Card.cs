@@ -55,10 +55,7 @@ public class Card : MonoBehaviour
     {
         if (matched)
             return;
-        if (active)
-        {
-            Hide();
-        } else
+        if (!active)
         {
             gameControl.GetComponent<GameControl>().RemoveActiveCards();
             Reveal();
