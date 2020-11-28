@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
+    private ColliderEvent colliderEvent;
     GameObject card;
     List<Color> cardColors = new List<Color> { 
         new Color(138, 98, 89),
@@ -40,6 +41,7 @@ public class GameControl : MonoBehaviour
 
     void Start()
     {
+        colliderEvent = GameObject.Find("Character").GetComponent<ColliderEvent>();
         float yPosition = 60f;
         float xPosition = -155f;
         for (int i = 1; i <= 12; i++)
@@ -111,6 +113,7 @@ public class GameControl : MonoBehaviour
         });
         if (canFinish)
         {
+            colliderEvent.HideObject();
             SceneManager.UnloadSceneAsync("MemoryTask");
             GameVariables.animals += 1;
         }
